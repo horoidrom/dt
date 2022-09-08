@@ -28,7 +28,7 @@ PRODUCT_RELEASE_NAME := j1pop3g
 TARGET_UNOFFICIAL_BUILD_ID := Horoid_test
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/j1pop3g/device_j1pop3g.mk)
