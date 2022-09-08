@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
+#$(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/j1pop3g/j1pop3g-vendor.mk)
 
