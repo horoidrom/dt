@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_COPY_FILES += \
-	device/samsung/j1pop3g/apns-conf.xml:system/etc/apns-conf.xml
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
