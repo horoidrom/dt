@@ -1,0 +1,105 @@
+# Un-categorized
+bin/at_distributor
+bin/npsmobex
+bin/refnotify
+bin/engpc
+lib/libatparser.so
+
+# GPS
+etc/gps.conf
+etc/gps.xml
+bin/gpsd
+bin/gps.cer
+lib/libsprd_agps_agent.so
+lib/hw/gps.default.so
+
+# HWC
+lib/libboost.so
+lib/egl/libGLES_mali.so
+
+# Audio
+etc/audio_hw.xml
+etc/audio_para
+etc/audio_policy.conf
+etc/codec_pga.xml
+etc/tiny_hw.xml
+lib/libfactoryutil.so
+lib/libomission_avoidance.so
+lib/libatchannel.so
+
+# WiFi
+etc/wifi/p2p_supplicant_overlay.conf
+etc/wifi/wpa_supplicant.conf
+etc/wifi/wpa_supplicant_overlay.conf
+etc/wifi/mcs.ini
+bin/macloader
+bin/mfgloader
+bin/download
+etc/firmware/sc2331_fdl.bin
+etc/firmware/sc2331_fw.bin
+
+
+# RIL
+bin/rild
+bin/modemd
+bin/nvitemd
+bin/phoneserver
+bin/ext_data.sh
+bin/ext_kill.sh
+bin/ext_symlink.sh
+bin/prepare_param.sh
+lib/libril.so
+lib/libreference-ril_sp.so
+lib/libsecril-client.so
+lib/libsecnativefeature.so
+
+# Camera
+lib/libisp.so
+lib/libmorpho_easy_hdr.so
+lib/libuvdenoise.so
+
+# HAL
+lib/hw/camera.sc8830.so
+lib/hw/gralloc.sc8830.so
+lib/hw/hwcomposer.sc8830.so
+lib/hw/sensors.sc8830.so
+lib/hw/sprd_gsp.sc8830.so
+vendor/lib/hw/lights.sc8830.so
+
+# Media
+#etc/media_profiles.xml
+#etc/media_codecs.xml
+
+# Codecs
+lib/libomx_aacdec_sprd.so
+lib/libomx_avcdec_hw_sprd.so
+lib/libomx_avcenc_hw_sprd.so
+lib/libomx_m4vh263dec_hw_sprd.so
+lib/libomx_m4vh263enc_hw_sprd.so
+lib/libomx_mp3dec_sprd.so
+lib/libomx_vpxdec_hw_sprd.so
+
+# DRM
+lib/libwvm.so
+lib/libomafldrm.so
+lib/drm/libomaplugin.so
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libWVStreamControlAPI_L3.so
+
+# Battery
+bin/lpm
+lib/libQmageDecoder.so
+media/battery_cover.spi
+media/battery_error.spi
+media/battery_low.spi
+media/battery_temperature_error.spi
+media/battery_temperature_limit.spi
+media/incompatible_charger.spi
+media/dock_error.spi
+media/particle_loop.spi
+media/particle_intro.spi
+media/percentage.spi
+media/wave_loop.spi
+media/wireless_right.spi
+media/wireless_right.spi
+
