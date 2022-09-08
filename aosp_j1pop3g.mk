@@ -15,7 +15,7 @@
 #
 
 PRODUCT_COPY_FILES += \
-	device/samsung/j1pop3g/apns-conf.xml:system/etc/apns-conf.xml \
+	device/samsung/j1pop3g/apns-conf.xml:system/etc/apns-conf.xml
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
@@ -35,7 +35,7 @@ $(call inherit-product, device/samsung/j1pop3g/device_j1pop3g.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-	device/samsung/j1pop3g/overlay \
+	device/samsung/j1pop3g/overlay 
 
 # Override build date
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -43,7 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_PACKAGES += \
 	Gallery2 \
 	Launcher3 \
-	Stk \
+	Stk 
 
 # Device identifier
 PRODUCT_DEVICE := j1pop3g
