@@ -12,8 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+LOCAL_PATH := device/samsung/j1pop3g
+
 # Inherit from the proprietary version
 -include vendor/samsung/j1pop3g/BoardConfigVendor.mk
+
 
 # Platform
 TARGET_ARCH := arm
