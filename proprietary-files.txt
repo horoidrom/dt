@@ -4,6 +4,10 @@ bin/npsmobex
 bin/refnotify
 bin/engpc
 lib/libatparser.so
+lib/libsamsungearcare.so
+lib/libsamsungeffect.so
+lib/libSamsungPkcs11Wrapper.so
+lib/libsamsungpowersound.so
 
 # GPS
 etc/gps.conf
@@ -37,6 +41,8 @@ bin/mfgloader
 bin/download
 etc/firmware/sc2331_fdl.bin
 etc/firmware/sc2331_fw.bin
+etc/firmware/scx35_pikeavivaltove_3M_MARLIN_connectivity_calibration.ini
+etc/firmware/scx35_pikeavivaltove_3M_MARLIN_connectivity_configure.ini
 
 
 # RIL
@@ -59,25 +65,11 @@ lib/libmorpho_easy_hdr.so
 lib/libuvdenoise.so
 
 # HAL
-lib/hw/camera.sc8830.so
-lib/hw/gralloc.sc8830.so
-lib/hw/hwcomposer.sc8830.so
 lib/hw/sensors.sc8830.so
-lib/hw/sprd_gsp.sc8830.so
-vendor/lib/hw/lights.sc8830.so
 
 # Media
 #etc/media_profiles.xml
 #etc/media_codecs.xml
-
-# Codecs
-lib/libomx_aacdec_sprd.so
-lib/libomx_avcdec_hw_sprd.so
-lib/libomx_avcenc_hw_sprd.so
-lib/libomx_m4vh263dec_hw_sprd.so
-lib/libomx_m4vh263enc_hw_sprd.so
-lib/libomx_mp3dec_sprd.so
-lib/libomx_vpxdec_hw_sprd.so
 
 # DRM
 lib/libwvm.so
@@ -89,17 +81,27 @@ vendor/lib/libWVStreamControlAPI_L3.so
 # Battery
 bin/lpm
 lib/libQmageDecoder.so
-media/battery_cover.spi
-media/battery_error.spi
-media/battery_low.spi
-media/battery_temperature_error.spi
-media/battery_temperature_limit.spi
-media/incompatible_charger.spi
-media/dock_error.spi
-media/particle_loop.spi
-media/particle_intro.spi
-media/percentage.spi
-media/wave_loop.spi
-media/wireless_right.spi
-media/wireless_right.spi
-
+media/battery_charging_5.qmg
+media/battery_charging_10.qmg
+media/battery_charging_15.qmg
+media/battery_charging_20.qmg
+media/battery_charging_25.qmg
+media/battery_charging_30.qmg
+media/battery_charging_35.qmg
+media/battery_charging_40.qmg
+media/battery_charging_45.qmg
+media/battery_charging_50.qmg
+media/battery_charging_55.qmg
+media/battery_charging_60.qmg
+media/battery_charging_65.qmg
+media/battery_charging_70.qmg
+media/battery_charging_75.qmg
+media/battery_charging_80.qmg
+media/battery_charging_85.qmg
+media/battery_charging_90.qmg
+media/battery_charging_95.qmg
+media/battery_charging_100.qmg
+media/battery_batteryerror.qmg
+media/battery_error.qmg
+media/chargingwarning.qmg
+media/Disconnected.qmg
