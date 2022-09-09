@@ -114,21 +114,19 @@ PRODUCT_PACKAGES += \
 	libwebviewchromium_loader.so \
 	libwebviewchromium_plat_support.so
 	
-# WPA supplicant
+# Wi-Fi
 PRODUCT_PACKAGES += \
-    hostapd \
-    libwpa_client \
 	dhcpcd.conf \
-	wpa_supplicant \
-	nvram_net.txt \
 	hostapd \
-	macloader
+	wpa_supplicant
 
 PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/wpa_supplicant/mcs.ini \
-    $(LOCAL_PATH)/configs/wpa_supplicant/wpa_supplicant.conf \
-    $(LOCAL_PATH)/configs/wpa_supplicant/wpa_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wpa_supplicant/p2p_supplicant_overlay.conf
+	$(LOCAL_PATH)/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+	$(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+	$(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	wifi.interface=wlan0
 
 # Permissions
 PERMISSION_XML_FILES := \
