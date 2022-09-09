@@ -57,9 +57,9 @@ PRODUCT_COPY_FILES += \
 	$(foreach f,$(MEDIA_CONFIGS),$(f):system/etc/$(notdir $(f)))
 
 # BT configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/bluetooth/iop_bt.db \
-    $(LOCAL_PATH)/configs/bluetooth/iop_device_list.conf
+#PRODUCT_COPY_FILES += \
+#$(LOCAL_PATH)/configs/bluetooth/iop_bt.db \
+#   $(LOCAL_PATH)/configs/bluetooth/iop_device_list.conf
 
 # HWC
 PRODUCT_PACKAGES += \
