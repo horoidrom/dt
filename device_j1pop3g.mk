@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
 	macloader
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wpa_supplicant/mcs.ini \
+#    $(LOCAL_PATH)/configs/wpa_supplicant/mcs.ini \
     $(LOCAL_PATH)/configs/wpa_supplicant/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wpa_supplicant/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wpa_supplicant/p2p_supplicant_overlay.conf
