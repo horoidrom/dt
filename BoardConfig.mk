@@ -105,7 +105,7 @@ BOARD_HAL_STATIC_LIBRARIES := libhealthd-j1pop3g.sc8830
 # Kernel
 # Kernel
 TARGET_PREBUILT_KERNEL   := $(LOCAL_PATH)/prebuilt/zImage
-TARGET_PREBUILT_DTB      := $(LOCAL_PATH)/prebuilt/dtb
+TARGET_PREBUILT_DTB      := $(LOCAL_PATH)/prebuilt/boot.img-dt
 BOARD_KERNEL_CMDLINE     := console=ttyS1,115200n8 androidboot.selinux=permissive
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_OFFSET      := 0x00008000
