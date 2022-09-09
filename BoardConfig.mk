@@ -103,11 +103,15 @@ COMMON_GLOBAL_CFLAGS += -DSPRD_HARDWARE
 BOARD_HAL_STATIC_LIBRARIES := libhealthd-j1pop3g.sc8830
 
 # Kernel
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 androidboot.selinux=permissive
-BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogenmod_j1pop3g_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/j1pop3g
+# Kernel
+TARGET_PREBUILT_KERNEL   := $(LOCAL_PATH)/prebuilt/zImage
+TARGET_PREBUILT_DTB      := $(LOCAL_PATH)/prebuilt/dtb
+BOARD_KERNEL_CMDLINE     := console=ttyS1,115200n8 androidboot.selinux=permissive
+BOARD_KERNEL_BASE        := 0x00000000
+BOARD_KERNEL_OFFSET      := 0x00008000
+BOARD_KERNEL_TAGS_OFFSET := 0x00000100
+BOARD_KERNEL_PAGESIZE    := 2048
+BOARD_MKBOOTIMG_ARGS   := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt $(LOCAL_PATH)/prebuilt/dtb
 
 # Init
 TARGET_NR_SVC_SUPP_GIDS := 24
